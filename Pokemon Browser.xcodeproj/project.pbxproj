@@ -11,6 +11,7 @@
 		28AD32CD203CD3D700425337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD32CC203CD3D700425337 /* ViewController.swift */; };
 		28AD32CF203CD3D700425337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AD32CE203CD3D700425337 /* Assets.xcassets */; };
 		28AD32D2203CD3D700425337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AD32D0203CD3D700425337 /* Main.storyboard */; };
+		28AD32DC203D417100425337 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AD32DB203D417100425337 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,8 @@
 		28AD32D1203CD3D700425337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28AD32D3203CD3D700425337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28AD32D4203CD3D700425337 /* Pokemon_Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pokemon_Browser.entitlements; sourceTree = "<group>"; };
+		28AD32DA203D31EC00425337 /* Pokemon Browser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pokemon Browser.entitlements"; sourceTree = "<group>"; };
+		28AD32DB203D417100425337 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +56,14 @@
 		28AD32C9203CD3D700425337 /* Pokemon Browser */ = {
 			isa = PBXGroup;
 			children = (
+				28AD32DA203D31EC00425337 /* Pokemon Browser.entitlements */,
 				28AD32CA203CD3D700425337 /* AppDelegate.swift */,
 				28AD32CC203CD3D700425337 /* ViewController.swift */,
 				28AD32CE203CD3D700425337 /* Assets.xcassets */,
 				28AD32D0203CD3D700425337 /* Main.storyboard */,
 				28AD32D3203CD3D700425337 /* Info.plist */,
 				28AD32D4203CD3D700425337 /* Pokemon_Browser.entitlements */,
+				28AD32DB203D417100425337 /* Pokemon.swift */,
 			);
 			path = "Pokemon Browser";
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AD32DC203D417100425337 /* Pokemon.swift in Sources */,
 				28AD32CD203CD3D700425337 /* ViewController.swift in Sources */,
 				28AD32CB203CD3D700425337 /* AppDelegate.swift in Sources */,
 			);
@@ -263,11 +269,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Pokemon Browser/Pokemon_Browser.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pokemon Browser/Pokemon Browser.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Pokemon Browser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.emrazian.Pokemon-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -278,11 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Pokemon Browser/Pokemon_Browser.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pokemon Browser/Pokemon Browser.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Pokemon Browser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.emrazian.Pokemon-Browser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
